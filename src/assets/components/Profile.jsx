@@ -3,25 +3,31 @@ import { Card, CardBody, Text, Image, Box, Badge } from '@chakra-ui/react'
 
 const Profile = () => {
 
-    const profile = {
+    const profiles = [{
         imageUrl: 'https://bit.ly/2Z4KKcF',
         name: 'karl',
-    }
+        status: true
+    },
+    {
+        imageUrl: 'https://bit.ly/2Z4KKcF',
+        name: 'Mark',
+        status: false
+    }]
 
 
 
   return (
-    <div>
-        <Card>
+    <Box w='full' border='1px solid teal' display='flex' alignItems='center' justifyContent='center'>
+    {profiles.map((user) => (
+        <Card w='400px' h='400px' display='flex' justifyItems='center' alignItems='center'>
         <CardBody>
-            <Image w='300px' src={profile.imageUrl} />
-            <Box>
-                <Badge borderRadius='full' px='2' colorScheme='teal'>Online</Badge>
-            </Box>
-            <Text>{profile.name}</Text>
+            <Image w='300px' src={user.imageUrl} />
+            <Box><Badge borderRadius='full' px='2' colorScheme='teal'>Online</Badge></Box>
+            <Text>{user.name}</Text>
         </CardBody>
       </Card>
-    </div>
+    ))}
+    </Box>
   )
 }
 
