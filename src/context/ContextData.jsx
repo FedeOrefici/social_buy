@@ -6,8 +6,7 @@ export const DataContext = createContext()
 const DataProvider = ({children}) => {
 
 
-    const [data, setData] = useState([])
- 
+    const [data, setData] = useState('')
     useEffect(() => {
         const axiosData = async () => {
             const endpoint = 'https://api.bluelytics.com.ar/v2/latest'
@@ -18,10 +17,10 @@ const DataProvider = ({children}) => {
     }, [])
 
 
-    console.log(data);
+    
 
     return(
-        <DataContext.Provider value={data}>
+        <DataContext.Provider value={{data}}>
             {children}
         </DataContext.Provider>
     )

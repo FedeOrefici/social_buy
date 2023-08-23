@@ -5,7 +5,8 @@ import {DataContext}  from '../context/ContextData'
 const Navbar = () => {
 
   const {data} = useContext(DataContext);
-  console.log(data);
+  
+  console.log(data)
 
 
 
@@ -14,7 +15,7 @@ const Navbar = () => {
       <Box>
         <Stat>
           <StatLabel>dolar price</StatLabel>
-          <StatNumber>300,80</StatNumber>
+          <StatNumber>{data?.blue?.value_avg}</StatNumber>
             <StatHelpText>
               <StatArrow type='increase'></StatArrow>
               0,3%
