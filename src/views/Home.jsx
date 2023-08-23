@@ -1,11 +1,12 @@
 import React from 'react'
 import Post from '../assets/components/Post'
+import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <>
+    <Box w='85%' border='1px solid green'>
         <Post />
-    </>
+    </Box>
   )
 }
 
