@@ -1,18 +1,23 @@
 import React from 'react'
 import { Card, CardBody, Text, Image, Box, Badge } from '@chakra-ui/react'
 
-const Profile = () => {
+const Post = () => {
 
     const profiles = [{
         imageUrl: 'https://bit.ly/2Z4KKcF',
-        name: 'karl',
+        name: 'House',
         status: true
     },
     {
         imageUrl: 'https://bit.ly/2Z4KKcF',
-        name: 'Mark',
+        name: 'House',
         status: false
-    }]
+    },
+    {
+      imageUrl: 'https://bit.ly/2Z4KKcF',
+      name: 'House',
+      status: true
+  }]
 
 
 
@@ -22,7 +27,7 @@ const Profile = () => {
         <Card w='400px' h='400px' display='flex' justifyItems='center' alignItems='center'>
         <CardBody>
             <Image w='300px' src={user.imageUrl} />
-            <Box><Badge borderRadius='full' px='2' colorScheme='teal'>Online</Badge></Box>
+            <Box><Badge borderRadius='full' px='2' colorScheme='teal'>On sale</Badge></Box>
             <Text>{user.name}</Text>
         </CardBody>
       </Card>
@@ -31,4 +36,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default Post
