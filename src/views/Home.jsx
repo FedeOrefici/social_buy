@@ -4,7 +4,7 @@ import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <Box w='85%' border='1px solid green'>
+    <Box w='85%' border='1px solid green' pt='30px'>
         <Post />
     </Box>
   )

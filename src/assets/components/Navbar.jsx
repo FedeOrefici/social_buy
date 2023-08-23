@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, Input, Button } from '@chakra-ui/react'
 
 const Navbar = () => {
 
@@ -6,8 +6,13 @@ const Navbar = () => {
   return (
     <Box h='100vh' border='1px solid green' w='15%' p='20px'>
       <Box>
-        <Text>navbar</Text>
-        <Text>search</Text>
+        <Box>
+          <span class="material-symbols-outlined">real_estate_agent</span>
+        </Box>
+        <Box w='80%' display='flex' flexDirection='column' gap='10px'>
+          <Input />
+          <Button>search</Button>
+        </Box>
       </Box>
     </Box>
   )
