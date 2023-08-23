@@ -1,7 +1,11 @@
 import { Stat, StatLabel, StatNumber, StatArrow, StatHelpText, Box } from '@chakra-ui/react'
+import { useContext } from 'react'
+import {DataContext}  from '../context/ContextData'
 
 const Navbar = () => {
 
+  const {data} = useContext(DataContext);
+  console.log(data);
 
 
 

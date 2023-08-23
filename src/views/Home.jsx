@@ -1,5 +1,5 @@
 import React from 'react'
-import Post from '../assets/components/Post'
+import Post from '../components/Post'
 import { Box } from '@chakra-ui/react'
 
 const Home = () => {
