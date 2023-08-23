@@ -1,12 +1,14 @@
 import './App.css'
-import Profile from './assets/components/Profile'
+import Navbar from './assets/components/Navbar'
+import Home from './views/Home'
 
 function App() {
   
   return (
     <>
-      <Profile />
-     
+      <Navbar />
+      <Home />
+
     </>
   )
 }
