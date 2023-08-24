@@ -1,7 +1,7 @@
 [
     {
       "name": "house",
-      "imageUrl": "https://example.com/house1.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "Real Estate Agency A",
       "description": "Spacious family house with a modern design. This lovely house features an open-concept living area, large windows, and a beautiful backyard garden. Ideal for a growing family.",
@@ -9,7 +9,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building1.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Broker XYZ",
       "description": "Contemporary apartment building located in a prime location. The building offers a range of unit sizes, each equipped with top-notch amenities and stunning views.",
@@ -17,7 +17,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house2.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "sold",
       "seller": "Home Realty Solutions",
       "description": "Elegant house with a classic touch. This recently renovated property boasts high ceilings, original hardwood floors, and a beautifully landscaped front yard.",
@@ -25,7 +25,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building2.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "City Homes Agency",
       "description": "Luxury building in the heart of downtown. The building features a rooftop garden, fitness center, and concierge services. A true urban oasis.",
@@ -33,7 +33,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house3.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Best Properties Group",
       "description": "Spacious house with modern amenities and garden. The interior boasts a gourmet kitchen, hardwood floors, and a cozy fireplace.",
@@ -41,7 +41,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building3.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "sold",
       "seller": "Urban Living Realtors",
       "description": "Contemporary building with eco-friendly features. The building offers energy-efficient appliances, solar panels, and a communal garden.",
@@ -49,7 +49,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house4.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "Dream Homes Co.",
       "description": "Rustic house with stunning mountain views. This cozy retreat features a wraparound porch, stone fireplace, and a spacious master suite.",
@@ -57,7 +57,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building4.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Prime Realty Partners",
       "description": "Mixed-use building with retail spaces and apartments. The building is located in a vibrant neighborhood with easy access to shops and restaurants.",
@@ -65,7 +65,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house5.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "sold",
       "seller": "Sunset Properties",
       "description": "Beautiful house with open-concept design and pool. The backyard oasis features a swimming pool, outdoor kitchen, and a covered patio.",
@@ -73,7 +73,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building5.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "Skyline Realtors",
       "description": "Iconic skyscraper with luxury penthouses. The building offers 24/7 security, private elevators, and breathtaking views of the city skyline.",
@@ -81,7 +81,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house6.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Harbor Real Estate",
       "description": "Waterfront house with boat dock and panoramic views. Enjoy boating and fishing right from your backyard in this coastal paradise.",
@@ -89,7 +89,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building6.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "sold",
       "seller": "Metropolitan Homes",
       "description": "Historic building converted into modern lofts. The units feature exposed brick walls, high ceilings, and industrial-chic design.",
@@ -97,7 +97,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house7.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "Nature Retreat Realty",
       "description": "Secluded house surrounded by nature, perfect for relaxation. The property includes a meditation garden, nature trails, and a private pond.",
@@ -105,7 +105,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building7.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Sky High Investments",
       "description": "Sleek and stylish high-rise building. The building features a state-of-the-art fitness center, rooftop lounge, and smart home technology.",
@@ -113,7 +113,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house8.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "sold",
       "seller": "Green Valley Properties",
       "description": "Energy-efficient house with modern architecture. This eco-friendly home includes solar panels, rainwater harvesting, and a certified organic garden.",
@@ -121,7 +121,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building8.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "Uptown Realty",
       "description": "Elegant building in the bustling city center. The building offers a grand lobby, concierge services, and easy access to cultural attractions.",
@@ -129,7 +129,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house9.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Serene Homes Agency",
       "description": "Serene house with a garden oasis, away from the city. Enjoy tranquility in this retreat, featuring a Japanese-inspired garden and koi pond.",
@@ -137,7 +137,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building9.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "sold",
       "seller": "Modern Living Solutions",
       "description": "Ultra-modern building with cutting-edge design. The building offers smart home integration, virtual concierge, and customizable living spaces.",
@@ -145,7 +145,7 @@
     },
     {
       "name": "house",
-      "imageUrl": "https://example.com/house10.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on sale",
       "seller": "Dreamscape Realtors",
       "description": "Dreamy house with unique architecture and charm. This whimsical property features a turret room, stained glass windows, and a secret garden.",
@@ -153,7 +153,7 @@
     },
     {
       "name": "building",
-      "imageUrl": "https://example.com/building10.jpg",
+      "imageUrl": "https://picsum.photos/seed/picsum/200/300",
       "status": "on negotiations",
       "seller": "Cityscape Properties",
       "description": "Urban building with diverse residential and commercial spaces. The building houses an art gallery, co-working spaces, and modern loft apartments.",
