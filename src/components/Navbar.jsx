@@ -8,7 +8,7 @@ const Navbar = () => {
   
 
   return (
-    <Box h='100vh' border='1px solid green' w='15%' p='20px'>
+    <Box border='1px solid gray' w='15%' p='20px'>
       <Box>
         <Stat>
           <StatLabel>Dolar price</StatLabel>
