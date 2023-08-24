@@ -1,0 +1,143 @@
+[
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house1.jpg",
+      "status": "on sale",
+      "seller": "Real Estate Agency A",
+      "description": "Cozy family house with a spacious backyard."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building1.jpg",
+      "status": "on negotiations",
+      "seller": "Broker XYZ",
+      "description": "Modern apartment building with great city views."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house2.jpg",
+      "status": "sold",
+      "seller": "Home Realty Solutions",
+      "description": "Charming house with vintage architecture, recently renovated."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building2.jpg",
+      "status": "on sale",
+      "seller": "City Homes Agency",
+      "description": "Luxury building in the heart of downtown."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house3.jpg",
+      "status": "on negotiations",
+      "seller": "Best Properties Group",
+      "description": "Spacious house with modern amenities and garden."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building3.jpg",
+      "status": "sold",
+      "seller": "Urban Living Realtors",
+      "description": "Contemporary building with eco-friendly features."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house4.jpg",
+      "status": "on sale",
+      "seller": "Dream Homes Co.",
+      "description": "Rustic house with stunning mountain views."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building4.jpg",
+      "status": "on negotiations",
+      "seller": "Prime Realty Partners",
+      "description": "Mixed-use building with retail spaces and apartments."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house5.jpg",
+      "status": "sold",
+      "seller": "Sunset Properties",
+      "description": "Beautiful house with open-concept design and pool."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building5.jpg",
+      "status": "on sale",
+      "seller": "Skyline Realtors",
+      "description": "Iconic skyscraper with luxury penthouses."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house6.jpg",
+      "status": "on negotiations",
+      "seller": "Harbor Real Estate",
+      "description": "Waterfront house with boat dock and panoramic views."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building6.jpg",
+      "status": "sold",
+      "seller": "Metropolitan Homes",
+      "description": "Historic building converted into modern lofts."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house7.jpg",
+      "status": "on sale",
+      "seller": "Nature Retreat Realty",
+      "description": "Secluded house surrounded by nature, perfect for relaxation."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building7.jpg",
+      "status": "on negotiations",
+      "seller": "Sky High Investments",
+      "description": "Sleek and stylish high-rise building."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house8.jpg",
+      "status": "sold",
+      "seller": "Green Valley Properties",
+      "description": "Energy-efficient house with modern architecture."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building8.jpg",
+      "status": "on sale",
+      "seller": "Uptown Realty",
+      "description": "Elegant building in the bustling city center."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house9.jpg",
+      "status": "on negotiations",
+      "seller": "Serene Homes Agency",
+      "description": "Serene house with a garden oasis, away from the city."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building9.jpg",
+      "status": "sold",
+      "seller": "Modern Living Solutions",
+      "description": "Ultra-modern building with cutting-edge design."
+    },
+    {
+      "name": "house",
+      "imageUrl": "https://example.com/house10.jpg",
+      "status": "on sale",
+      "seller": "Dreamscape Realtors",
+      "description": "Dreamy house with unique architecture and charm."
+    },
+    {
+      "name": "building",
+      "imageUrl": "https://example.com/building10.jpg",
+      "status": "on negotiations",
+      "seller": "Cityscape Properties",
+      "description": "Urban building with diverse residential and commercial spaces."
+    }
+  ]
+  
