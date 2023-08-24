@@ -6,24 +6,18 @@ const Navbar = () => {
 
   const {data} = useContext(DataContext);
   
-  console.log(data)
-
-
 
   return (
     <Box h='100vh' border='1px solid green' w='15%' p='20px'>
       <Box>
         <Stat>
-          <StatLabel>dolar price</StatLabel>
-          <StatNumber>{data?.blue?.value_avg}</StatNumber>
-            <StatHelpText>
-              <StatArrow type='increase'></StatArrow>
-              0,3%
-            </StatHelpText>
+          <StatLabel>Dolar price</StatLabel>
+          <StatNumber>{data?.oficial?.value_avg}</StatNumber>
+          <StatArrow type={data?.oficial?.value_avg > data?.oficial?.value_sell ? 'increase' : 'decrease'}></StatArrow>
         </Stat>
       </Box>
       <Box>
-       filters
+       
       </Box>
     </Box>
   )

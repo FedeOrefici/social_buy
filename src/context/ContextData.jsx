@@ -7,6 +7,7 @@ const DataProvider = ({children}) => {
 
 
     const [data, setData] = useState('')
+    
     useEffect(() => {
         const axiosData = async () => {
             const endpoint = 'https://api.bluelytics.com.ar/v2/latest'
