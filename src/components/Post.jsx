@@ -10,7 +10,7 @@ const Post = () => {
   return (
     <>
     {data.map((user) => (
-        <Card w='70%' display='flex' justifyContent='center' alignItems='center' border='1px solid red'>
+        <Card w='70%' display='flex' justifyContent='center' alignItems='center'>
         <CardBody display='flex' alignItems='center' justifyContent='space-around' w='100%' p='10px'>
           <Box w='20%' h='90%' display='flex' flexDirection='column' p='30px' alignItems='center' justifyContent='center'>
             <Avatar size='md' src='https://bit.ly/dan-abramov'/>
