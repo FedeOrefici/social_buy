@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
+
 export const DataContext = createContext()
 
 const DataProvider = ({children}) => {
@@ -18,10 +19,14 @@ const DataProvider = ({children}) => {
     }, [])
 
 
+    const addProperty = () => {
+        
+        
+    }
     
 
     return(
-        <DataContext.Provider value={{data}}>
+        <DataContext.Provider value={{data, addProperty}}>
             {children}
         </DataContext.Provider>
     )

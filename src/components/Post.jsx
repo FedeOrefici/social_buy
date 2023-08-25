@@ -10,7 +10,7 @@ const Post = () => {
   return (
     <Box overflowY='scroll' flexDirection='column' gap='10px' display='flex' py='20px'>
     {data.map((user) => (
-        <Card w='70%' display='flex' justifyContent='center' alignItems='center' margin='auto'>
+        <Card w='70%' display='flex' justifyContent='center' alignItems='center' margin='auto' bg='#FBF9FF'>
           <CardBody display='flex' alignItems='center' justifyContent='space-around' w='100%' p='10px'>
             <Box w='20%' h='90%' display='flex' flexDirection='column' p='30px' alignItems='center' justifyContent='center'>
               <Avatar size='md' src='https://bit.ly/dan-abramov'/>
