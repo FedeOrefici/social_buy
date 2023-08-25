@@ -1,4 +1,4 @@
-import { Stat, StatLabel, StatNumber, StatArrow, StatHelpText, Box } from '@chakra-ui/react'
+import { Stat, StatLabel, StatNumber, StatArrow, StatHelpText, Box, Text } from '@chakra-ui/react'
 import { useContext } from 'react'
 import {DataContext}  from '../context/ContextData'
 
@@ -8,29 +8,28 @@ const Navbar = () => {
   
 
   return (
-    <Box border='1px solid green' w='15%' py='30px' h='100vh' display='flex' flexDirection='column' gap='50px'>
+    <Box w='15%' py='30px' h='100vh' display='flex' flexDirection='column' gap='50px' shadow='lg'>
       {/* dolar price */}
-      <Box display='flex' w='100%'>
+      <Box display='flex' w='100%' flexDirection='column' alignItems='center'>
         <Box w='70%' h='60px' p='5px'>
-          <Stat display='flex' alignItems='center' justifyContent='center'>
+          <Stat display='flex'>
             <Box display='flex' flexDirection='column'>
               <StatLabel color='gray.500'>Dolar price</StatLabel> 
               <StatNumber>${data?.oficial?.value_avg} = ARS</StatNumber>
+              <Box display='flex' alignItems='center'>
+                <StatArrow position='relative' bottom='3px' type={data?.oficial?.value_avg > data?.oficial?.value_sell ? 'decrease' : 'increase'}></StatArrow>
+                <StatHelpText>0.2%</StatHelpText>
+              </Box>
             </Box>
-        </Stat>
-        </Box>
-        <Box w='20%' h='60px' p='5px'>
-          <Stat display='flex' alignItems='center' justifyContent='center'>
-            <StatArrow type={data?.oficial?.value_avg > data?.oficial?.value_sell ? 'decrease' : 'increase'}></StatArrow>
-            <StatHelpText>0.2%</StatHelpText>
           </Stat>
         </Box>
+      </Box>  
+      
+      
+        
+      <Box h='600px' px='30px' py='10px'>
+        filter
       </Box>
-      <Box border='1px solid red' h='600px'>
-        filters
-      </Box>
-
-
 
 
 
