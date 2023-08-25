@@ -4,7 +4,7 @@ import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <Box w='85%' display='flex' alignItems='center' justifyContent='center' flexDirection='column' overflowY='scroll' py='30px' gap='30px'>
+    <Box w='85%' h='100vh' display='flex' alignItems='center' justifyContent='center' flexDirection='column' py='30px'>
         <Post />
     </Box>
   )
