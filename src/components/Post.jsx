@@ -20,10 +20,10 @@ const Post = () => {
               <Image w='300px' src={user.imageUrl} h='200' />
               <Box w='60%' h='100%' py='4px'>
                 <Box display='flex' gap='10px'>
-                  <Text fontWeight='bold'>{user.name}</Text>
                   <Badge borderRadius='full' px='2' display='flex' alignItems='center' fontSize='10px' colorScheme={user.status === 'on sale' || user.status === 'on negotiations' ? 'teal' : 'red'}>
                     {user.status}
                   </Badge>
+                  <Text fontWeight='bold'>{user.name}</Text>
                 </Box>
                 <Text textAlign='justify'>{user.description}</Text>
                 <Text>$ {user.price}</Text>
