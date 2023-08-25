@@ -11,15 +11,14 @@ const Navbar = () => {
     <Box w='15%' py='30px' h='100vh' display='flex' flexDirection='column' justifyContent='space-around' gap='50px' shadow='lg'>
       {/* Filters */}
       <Box h='600px' px='30px' py='10px'>
-        <Text color>Choose Property</Text>
-        <Box display='flex' flexDirection='column'>
+      <Text color='gray.700' fontStyle='italic' fontWeight='medium'>Porperty</Text>
+        <Box display='flex' flexDirection='column' mt='4px'>
           <Checkbox>House</Checkbox>
           <Checkbox>Building</Checkbox>
         </Box>
         <Box display='flex' flexDirection='column' gap='5px' mt='50px'>
           <Box display='flex' gap='4px'>
-          <Text>by</Text>
-          <Text color='gray.700' fontStyle='italic' fontWeight='medium'>Price</Text>
+            <Text color='gray.700' fontStyle='italic' fontWeight='medium'>Price</Text>
           </Box>
           <Checkbox>$0 - $500.000</Checkbox>
           <Checkbox>$500.000 - $1.000.000</Checkbox>
