@@ -17,7 +17,8 @@ const AddProperty = () => {
         price: '',
         description: '',
         picture: '',
-        type: ''
+        type: '',
+        status:''
     })
 
     const [errors, setErrors] = useState({
@@ -25,7 +26,8 @@ const AddProperty = () => {
         price: '',
         description: '',
         picture: '',
-        type: ''
+        type: '',
+        status:''
     })
 
     const handleChange = (event) => {
@@ -44,20 +46,23 @@ const AddProperty = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(property, 'sending...');
+        const data = JSON.stringify(property)
+        localStorage.setItem('data', data)
+        addProperty(property)
+        setSend(true)
         setProperty({
             name: '',
             price: '',
             description: '',
             picture: '',
-            type: ''
+            type: '',
+            status: ''
         })
-        setSend(true)
         
     }
 
     useEffect(() => {
-        let timeOut = setTimeout(() => {setSend(false)}, 1200000)
+        let timeOut = setTimeout(() => {setSend(false)}, 2000)
         return () => clearTimeout(timeOut)
     }, [send])
 
@@ -96,6 +101,15 @@ const AddProperty = () => {
                 <option>Building</option>
             </Select>
             {errors && <Text color='red'>{errors.type}</Text>}
+        </Box>
+        <Box h='80px'>
+            <Select onChange={handleChange} name="status" value={property.status}>
+                <option disabled>Status</option>
+                <option>On sale</option>
+                <option>On negotiations</option>
+                <option>Sold</option>
+            </Select>
+            {errors && <Text color='red'>{errors.status}</Text>}
         </Box>
             <Button type='submit'>Add</Button>
         </FormControl>

@@ -19,9 +19,8 @@ const DataProvider = ({children}) => {
     }, [])
 
 
-    const addProperty = () => {
-        
-        
+    const addProperty = (property) => {
+        console.log('se envio al localstorage');
     }
     
 
