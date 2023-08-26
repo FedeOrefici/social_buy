@@ -15,6 +15,9 @@ const validationProperty = (property) => {
     if(!property.type){
         errors.name = 'Required'
     }
+    if(!property.status){
+        errors.status = 'Required'
+    }
     return errors;
 }
 
