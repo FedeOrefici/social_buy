@@ -12,6 +12,8 @@ const AddProperty = () => {
     const navigate = useNavigate()
     
     const [send, setSend] = useState(false)
+    const [dataProperties, setDataProperties] = useState([])
+
     const [property, setProperty] = useState({
         name: '',
         price: '',
@@ -46,9 +48,10 @@ const AddProperty = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        const data = JSON.stringify(property)
-        localStorage.setItem('data', data)
-        addProperty(property)
+        const existingData = JSON.parse(localStorage.getItem('property')) ?? []
+        const newData = [...existingData, property]
+        localStorage.setItem('property', JSON.stringify(newData))
+
         setSend(true)
         setProperty({
             name: '',
@@ -57,8 +60,7 @@ const AddProperty = () => {
             picture: '',
             type: '',
             status: ''
-        })
-        
+        }) 
     }
 
     useEffect(() => {
@@ -105,9 +107,9 @@ const AddProperty = () => {
         <Box h='80px'>
             <Select onChange={handleChange} name="status" value={property.status}>
                 <option disabled>Status</option>
-                <option>On sale</option>
-                <option>On negotiations</option>
-                <option>Sold</option>
+                <option>on sale</option>
+                <option>on negotiations</option>
+                <option>sold</option>
             </Select>
             {errors && <Text color='red'>{errors.status}</Text>}
         </Box>

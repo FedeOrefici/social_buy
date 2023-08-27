@@ -18,14 +18,10 @@ const DataProvider = ({children}) => {
         axiosData()
     }, [])
 
-
-    const addProperty = (property) => {
-        console.log('se envio al localstorage');
-    }
     
 
     return(
-        <DataContext.Provider value={{data, addProperty}}>
+        <DataContext.Provider value={{data}}>
             {children}
         </DataContext.Provider>
     )
