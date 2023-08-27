@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom'
 
 const AddProperty = () => {
 
-    const { addProperty } = useContext(DataContext)
     const navigate = useNavigate()
     
     const [send, setSend] = useState(false)
