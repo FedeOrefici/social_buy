@@ -4,11 +4,13 @@ import validationProperty from './validations'
 import Modal from '../components/Modal'
 import { useNavigate } from 'react-router-dom'
 import ErrorModal from '../components/ErrorModal'
+import FileBase64 from 'react-file-base64'
 
 
 const AddProperty = () => {
 
     const navigate = useNavigate()
+
     
     const [send, setSend] = useState(false)
     const [modalError, setModalError] = useState(false)
@@ -34,9 +36,7 @@ const AddProperty = () => {
     const handleChange = (event) => {
         setProperty({
             ...property,
-            [event.target.name]: event.target.name === 'price'
-            ? +event.target.value 
-            : event.target.value
+            [event.target.name]: event.target.value
         })
         setErrors(validationProperty({
             ...property,
@@ -56,7 +56,7 @@ const AddProperty = () => {
         const newData = [...existingData, property]
         localStorage.setItem('property', JSON.stringify(newData))
 
-        setSend(true)
+        
         setProperty({
             name: '',
             price: '',
@@ -64,7 +64,9 @@ const AddProperty = () => {
             picture: '',
             type: '',
             status: ''
-        }) 
+        })
+
+        setSend(true)
     }
 
     useEffect(() => {
@@ -85,12 +87,12 @@ const AddProperty = () => {
         <Box h='110px'>
             <FormLabel>Name</FormLabel>
             <Input onChange={handleChange} name="name" type='text' value={property.name} />
-            {errors && <Text color='red'>{errors.name}</Text>}
+            {errors.name && <Text color='red'>{errors.name}</Text>}
         </Box>
         <Box h='110px'>
             <FormLabel>Price</FormLabel>
             <NumberInput>
-                <NumberInputField onChange={handleChange} name="price" value={property.price} />
+                <Input onChange={handleChange} name="price" value={property.price} />
             </NumberInput>
             {errors && <Text color='red'>{errors.price}</Text>}
         </Box>
@@ -99,14 +101,15 @@ const AddProperty = () => {
             <Textarea onChange={handleChange} name="description" value={property.description} />
             {errors && <Text color='red'>{errors.description}</Text>}
         </Box>
+
         <Box h='110px'>
             <FormLabel>Picture</FormLabel>
-            <Input type='file' onChange={handleChange} name="picture" value={property.picture} />
+            <FileBase64 multiple={false} onDone={(base64) => setProperty({...property, picture: base64})} />
             {errors && <Text color='red'>{errors.picture}</Text>}
         </Box>
         <Box h='80px'>
             <Select onChange={handleChange} name="type" value={property.type}>
-                <option disabled>Select a property</option>
+                <option selected>Select a property</option>
                 <option>House</option>
                 <option>Building</option>
             </Select>
@@ -114,7 +117,7 @@ const AddProperty = () => {
         </Box>
         <Box h='80px'>
             <Select onChange={handleChange} name="status" value={property.status}>
-                <option disabled>Status</option>
+                <option selected>Status</option>
                 <option>on sale</option>
                 <option>on negotiations</option>
                 <option>sold</option>
