@@ -8,6 +8,7 @@ const DataProvider = ({children}) => {
 
 
     const [data, setData] = useState('')
+    const [filteredData, setFilteredData] = useState([])
 
     useEffect(() => {
         const axiosData = async () => {
@@ -25,7 +26,7 @@ const DataProvider = ({children}) => {
     
 
     return(
-        <DataContext.Provider value={{data}}>
+        <DataContext.Provider value={{data, setFilteredData, filteredData}}>
             {children}
         </DataContext.Provider>
     )
