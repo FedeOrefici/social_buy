@@ -1,9 +1,9 @@
-import { FormControl, FormLabel, Input, Select, Textarea, Button, NumberInput, NumberInputField, Box, Text, Alert } from '@chakra-ui/react'
-import React, { useContext, useEffect, useState } from 'react'
-import { DataContext } from '../context/ContextData'
+import { FormControl, FormLabel, Input, Select, Textarea, Button, NumberInput, NumberInputField, Box, Text, Alert, AlertIcon, AlertDescription } from '@chakra-ui/react'
+import React, { useEffect, useState } from 'react'
 import validationProperty from './validations'
 import Modal from '../components/Modal'
 import { useNavigate } from 'react-router-dom'
+import ErrorModal from '../components/ErrorModal'
 
 
 const AddProperty = () => {
@@ -11,7 +11,7 @@ const AddProperty = () => {
     const navigate = useNavigate()
     
     const [send, setSend] = useState(false)
-    const [dataProperties, setDataProperties] = useState([])
+    const [modalError, setModalError] = useState(false)
 
     const [property, setProperty] = useState({
         name: '',
@@ -47,6 +47,11 @@ const AddProperty = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+        const errors = validationProperty(property)
+        if(Object.keys(errors).length > 0){
+            setModalError(true)
+            return;
+        }
         const existingData = JSON.parse(localStorage.getItem('property')) ?? []
         const newData = [...existingData, property]
         localStorage.setItem('property', JSON.stringify(newData))
@@ -67,6 +72,10 @@ const AddProperty = () => {
         return () => clearTimeout(timeOut)
     }, [send])
 
+    useEffect(() => {
+        let timeOut = setTimeout(() => {setModalError(false)}, 2000)
+        return () => clearTimeout(timeOut)
+    }, [modalError])
 
 
   return (
@@ -116,6 +125,7 @@ const AddProperty = () => {
         </FormControl>
     </form>
     {send ? <Modal /> : null}
+    {modalError ? <ErrorModal /> : null}
     </Box>
   )
 }
