@@ -34,9 +34,7 @@ const AddProperty = () => {
     const handleChange = (event) => {
         setProperty({
             ...property,
-            [event.target.name]: event.target.name === 'price'
-            ? +event.target.value 
-            : event.target.value
+            [event.target.name]: event.target.value
         })
         setErrors(validationProperty({
             ...property,
@@ -56,7 +54,7 @@ const AddProperty = () => {
         const newData = [...existingData, property]
         localStorage.setItem('property', JSON.stringify(newData))
 
-        setSend(true)
+        
         setProperty({
             name: '',
             price: '',
@@ -64,7 +62,9 @@ const AddProperty = () => {
             picture: '',
             type: '',
             status: ''
-        }) 
+        })
+
+        setSend(true)
     }
 
     useEffect(() => {
@@ -90,7 +90,7 @@ const AddProperty = () => {
         <Box h='110px'>
             <FormLabel>Price</FormLabel>
             <NumberInput>
-                <NumberInputField onChange={handleChange} name="price" value={property.price} />
+                <Input onChange={handleChange} name="price" value={property.price} />
             </NumberInput>
             {errors && <Text color='red'>{errors.price}</Text>}
         </Box>
