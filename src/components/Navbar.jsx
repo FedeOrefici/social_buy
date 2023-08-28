@@ -1,23 +1,25 @@
-import { Stat, StatLabel, StatNumber, StatArrow, StatHelpText, Box, Text, Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import { Stat, StatLabel, StatNumber, StatArrow, StatHelpText, Box, Text, Checkbox, CheckboxGroup, filter } from '@chakra-ui/react'
 import { useContext, useState } from 'react'
 import {DataContext}  from '../context/ContextData'
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
-  const {data} = useContext(DataContext);
+  const {data, filteredData, setFilteredData} = useContext(DataContext);
   const houseBuilding = localStorage.getItem('property')
   const parsedData = JSON.parse(houseBuilding)
-
-
-
-
+  
   const handleClick = (event) => {
-    
-    const filterData = parsedData.filter((check) => check.type === event.target.value)
-    console.log(filterData);
-    return filterData;
+    if(event.target.checked){
+      const filterData = parsedData.filter((check) => check.type === event.target.value)
+      return setFilteredData(filterData);
+    } else {
+      return setFilteredData(parsedData);
+    }
+
   }
+
+  console.log(filteredData, 'aca filteredData');
   
 
   
