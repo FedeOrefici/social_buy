@@ -16,10 +16,18 @@ const Navbar = () => {
     } else {
       return setFilteredData(parsedData);
     }
-
   }
 
-  console.log(filteredData, 'aca filteredData');
+  const handlePrice = (minPrice, maxPrice) => {
+    if(minPrice === 0 && maxPrice === Infinity){
+      setFilteredData(parsedData)
+    } else {
+      const filteredPrice = parsedData.filter(value => value.price >= minPrice && value.price <= maxPrice)
+      console.log(filteredPrice, 'aca precio');
+      setFilteredData(filteredPrice)    }
+  }
+
+  
   
 
   
@@ -37,9 +45,9 @@ const Navbar = () => {
           <Box display='flex' gap='4px'>
             <Text color='gray.700' fontStyle='italic' fontWeight='medium'>Price</Text>
           </Box>
-          <Checkbox>$0 - $500.000</Checkbox>
-          <Checkbox>$500.000 - $1.000.000</Checkbox>
-          <Checkbox>$1.000.000 - $2.000.000</Checkbox>
+          <Checkbox onChange={() => handlePrice(0, 500000)}>$0 - $500.000</Checkbox>
+          <Checkbox onChange={() => handlePrice(500000, 1000000)}>$500.000 - $1.000.000</Checkbox>
+          <Checkbox onChange={() => handlePrice(1000000, 2000000)}>$1.000.000 - $2.000.000</Checkbox>
         </Box>
       </Box>
 
