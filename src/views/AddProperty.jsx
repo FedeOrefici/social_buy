@@ -94,18 +94,18 @@ const AddProperty = () => {
             <NumberInput>
                 <Input onChange={handleChange} name="price" value={property.price} />
             </NumberInput>
-            {errors && <Text color='red'>{errors.price}</Text>}
+            {errors.price && <Text color='red'>{errors.price}</Text>}
         </Box>
         <Box h='150px'>
             <FormLabel>Description</FormLabel>
             <Textarea onChange={handleChange} name="description" value={property.description} />
-            {errors && <Text color='red'>{errors.description}</Text>}
+            {errors.description && <Text color='red'>{errors.description}</Text>}
         </Box>
 
         <Box h='110px'>
             <FormLabel>Picture</FormLabel>
             <FileBase64 multiple={false} onDone={(base64) => setProperty({...property, picture: base64})} />
-            {errors && <Text color='red'>{errors.picture}</Text>}
+            {errors.picture && <Text color='red'>{errors.picture}</Text>}
         </Box>
         <Box h='80px'>
             <Select onChange={handleChange} name="type" value={property.type}>
@@ -113,7 +113,7 @@ const AddProperty = () => {
                 <option>House</option>
                 <option>Building</option>
             </Select>
-            {errors && <Text color='red'>{errors.type}</Text>}
+            {errors.type && <Text color='red'>{errors.type}</Text>}
         </Box>
         <Box h='80px'>
             <Select onChange={handleChange} name="status" value={property.status}>
@@ -122,7 +122,7 @@ const AddProperty = () => {
                 <option>on negotiations</option>
                 <option>sold</option>
             </Select>
-            {errors && <Text color='red'>{errors.status}</Text>}
+            {errors.status && <Text color='red'>{errors.status}</Text>}
         </Box>
             <Button type='submit'>Add</Button>
         </FormControl>
